@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    margin: 2rem;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+/* ピンク色に変化 */
+.fade-button-pink {
+    background: #f77;
+    transition: background .3s;
+
+    &:hover {
+        background: #fcc;
+    }
+}
+
+/* ランダムに変化 */
+.fade-button-random {
+    background: #07f;
+}

@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+/* ボタン共通スタイル */
+button {
+    display: block;
+    margin: 2rem;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* 左から右に流れる */
+.flow-button {
+    background: linear-gradient(90deg, #0bd, #05b);
+    background-size: 200% 100%; /* 背景を横方向に広げて流れる効果を作る */ 
+    transition: background-position .4s ease;
+
+    &:hover {
+        background-position: -100% 0; /* 背景を右から左に移動 */ 
+    }
+}
